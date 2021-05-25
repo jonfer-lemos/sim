@@ -1,0 +1,49 @@
+									'$sequencia',
+	…or create a new repository on the command line
+echo "# SIM" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jonfer-lemos/SIM.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/jonfer-lemos/SIM.git
+git branch -M main
+git push -u origin main											'$area_manut',
+												'$centro_custo',
+												'$contador',
+												'$custo_m_d_o',
+												'$custo_troca',
+												'$custo_mater',
+												'$custo_subst',
+												'$custo_terc',
+												'$ult_man',
+												'$cont_man',
+					STR_TO_DATE(`$prev_inicio_dt`, '%d/%m/%Y'),					
+                                                '$prev_inicio_h',
+                                                '$prev_fim_dt',
+                                                '$prev_fim_h',
+												'$real_inicio_dt',
+                                                '$real_inicio_h',
+                                                '$real_fim_dt',
+                                                '$real_fim_h',
+                                                '$p_in_man_dt',
+                                                '$p_in_man_h',
+                                                '$p_fim_man_dt',
+                                                '$p_fim_man_h',
+                                                '$r_in_man_dt',
+                                                '$r_in_man_h',
+                                                '$r_fim_man_dt',
+                                                '$r_fim_man_h',
+												'$situacaoo',
+                                                '$termino',
+                                                '$usuario_alt',
+                                                '$prioridade',
+                                                '$centro_trab',
+                                                '$tipo_retorno',
+                                                '$contador_2',
+                                                '$pos_cont',
+                                                '$ordem_pai',
+                                                '$bem_pai'																																																																						
+												)";
