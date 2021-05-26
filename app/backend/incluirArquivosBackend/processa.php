@@ -27,17 +27,17 @@ if (!empty($_FILES['arquivo']['tmp_name'])) {
 			$plano_manut = $linha->getElementsByTagname("Data")->item(1)->nodeValue;
 			$bem = $linha->getElementsByTagname("Data")->item(2)->nodeValue;
 			$nome_do_bem = $linha->getElementsByTagname("Data")->item(3)->nodeValue;
-			$servico = $linha->getElementsByTagname("Data")->item(5)->nodeValue;
-			$nome_servico = $linha->getElementsByTagname("Data")->item(4)->nodeValue;
-			$dt_original = $linha->getElementsByTagname("Data")->item(5)->nodeValue;
-			$tipo_manut = $linha->getElementsByTagname("Data")->item(6)->nodeValue;
-			$sequencia = $linha->getElementsByTagname("Data")->item(7)->nodeValue;
-			$area_manut = $linha->getElementsByTagname("Data")->item(8)->nodeValue;
-			$centro_custo = $linha->getElementsByTagname("Data")->item(9)->nodeValue;				
-			$situacao = $linha->getElementsByTagname("Data")->item(10)->nodeValue;
-			$termino = $linha->getElementsByTagname("Data")->item(11)->nodeValue;
-			$usuario_alt = $linha->getElementsByTagname("Data")->item(12)->nodeValue;
-			$centro_trab = $linha->getElementsByTagname("Data")->item(13)->nodeValue;
+			$servico = $linha->getElementsByTagname("Data")->item(4)->nodeValue;
+			$nome_servico = $linha->getElementsByTagname("Data")->item(5)->nodeValue;
+			$dt_original = $linha->getElementsByTagname("Data")->item(6)->nodeValue;
+			$tipo_manut = $linha->getElementsByTagname("Data")->item(7)->nodeValue;
+			$sequencia = $linha->getElementsByTagname("Data")->item(8)->nodeValue;
+			$area_manut = $linha->getElementsByTagname("Data")->item(9)->nodeValue;
+			$centro_custo = $linha->getElementsByTagname("Data")->item(10)->nodeValue;				
+			$situacao = $linha->getElementsByTagname("Data")->item(11)->nodeValue;
+			$termino = $linha->getElementsByTagname("Data")->item(12)->nodeValue;
+			$usuario_alt = $linha->getElementsByTagname("Data")->item(13)->nodeValue;
+			$centro_trab = $linha->getElementsByTagname("Data")->item(14)->nodeValue;
 
 
 			$result_file = "INSERT INTO `stj` (ordem_serv, plano_manut, bem, nome_do_bem, servico, 
