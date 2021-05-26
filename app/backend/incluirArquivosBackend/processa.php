@@ -22,22 +22,22 @@ if (!empty($_FILES['arquivo']['tmp_name'])) {
 	foreach ($linhas as $linha) {
 		if ($primeira_linha == false) {
 			
-			$ordem_serv = $linha->getElementsByTagname("Data")->item(1)->nodeValue;
+			$ordem_serv = $linha->getElementsByTagname("Data")->item(0)->nodeValue;
 			echo  '<br>' . 'O.S:' . $ordem_serv . '<hr>';
-			$plano_manut = $linha->getElementsByTagname("Data")->item(2)->nodeValue;
-			$bem = $linha->getElementsByTagname("Data")->item(3)->nodeValue;
-			$nome_do_bem = $linha->getElementsByTagname("Data")->item(4)->nodeValue;
+			$plano_manut = $linha->getElementsByTagname("Data")->item(1)->nodeValue;
+			$bem = $linha->getElementsByTagname("Data")->item(2)->nodeValue;
+			$nome_do_bem = $linha->getElementsByTagname("Data")->item(3)->nodeValue;
 			$servico = $linha->getElementsByTagname("Data")->item(5)->nodeValue;
-			$nome_servico = $linha->getElementsByTagname("Data")->item(6)->nodeValue;
-			$dt_original = $linha->getElementsByTagname("Data")->item(7)->nodeValue;
-			$tipo_manut = $linha->getElementsByTagname("Data")->item(8)->nodeValue;
-			$sequencia = $linha->getElementsByTagname("Data")->item(9)->nodeValue;
-			$area_manut = $linha->getElementsByTagname("Data")->item(10)->nodeValue;
-			$centro_custo = $linha->getElementsByTagname("Data")->item(11)->nodeValue;				
-			$situacao = $linha->getElementsByTagname("Data")->item(36)->nodeValue;
-			$termino = $linha->getElementsByTagname("Data")->item(37)->nodeValue;
-			$usuario_alt = $linha->getElementsByTagname("Data")->item(38)->nodeValue;
-			$centro_trab = $linha->getElementsByTagname("Data")->item(40)->nodeValue;
+			$nome_servico = $linha->getElementsByTagname("Data")->item(4)->nodeValue;
+			$dt_original = $linha->getElementsByTagname("Data")->item(5)->nodeValue;
+			$tipo_manut = $linha->getElementsByTagname("Data")->item(6)->nodeValue;
+			$sequencia = $linha->getElementsByTagname("Data")->item(7)->nodeValue;
+			$area_manut = $linha->getElementsByTagname("Data")->item(8)->nodeValue;
+			$centro_custo = $linha->getElementsByTagname("Data")->item(9)->nodeValue;				
+			$situacao = $linha->getElementsByTagname("Data")->item(10)->nodeValue;
+			$termino = $linha->getElementsByTagname("Data")->item(11)->nodeValue;
+			$usuario_alt = $linha->getElementsByTagname("Data")->item(12)->nodeValue;
+			$centro_trab = $linha->getElementsByTagname("Data")->item(13)->nodeValue;
 
 
 			$result_file = "INSERT INTO `stj` (ordem_serv, plano_manut, bem, nome_do_bem, servico, 
