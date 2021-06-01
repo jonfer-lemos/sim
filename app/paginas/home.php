@@ -68,4 +68,8 @@ include '../app/backend/homeBackend/homePainel.php';
 include '../app/paginas/sgos/dashSgos.php';
 
 include '../app/paginas/calendarios/dashCalender.php';
+
+include '../app/paginas/analiseLubrificantes/dashAnalise.php';
+
+include '../app/paginas/custoTon/dashCusto.php';
 ?>
