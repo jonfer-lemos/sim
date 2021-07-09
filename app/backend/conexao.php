@@ -15,7 +15,7 @@
 
 
 // $db = "mysql:7.4.3";
-$host = "177.71.185.46";
+$host = "52.67.109.248";
 $username = "jonferlemos";
 $password = "Somel.1926";
 $dbname = "bd_sim";
